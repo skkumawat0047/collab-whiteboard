@@ -105,6 +105,10 @@ const Navbar = ({ title, setTitle, ShareEmail, setShareEmail, onShareSubmit, cle
                     <LogOut size={13} /> Logout
                   </button>
                 )}
+                {user === "Guest" && (
+                  <button onClick={() =>navigate("/login")} style={{ padding: "8px 14px", background: "none", border: "none", cursor: "pointer", display: "flex", gap: "6px", color: "#dc2626", width: "100%", fontFamily: 'Architects Daughter', fontSize: 13,backgroundColor:"#4bd783" }}>Login
+                  </button>
+                )}
               </div>
             )}
           </div>

@@ -255,6 +255,11 @@ export default function HomePage() {
                   <LogOut size={14} /> Logout
                 </button>
               )}
+              {userName === "Guest" && (
+                <button onClick={()=>navigate('/login')} className="login-btn  bg-green-300">
+                  Login
+                </button>
+              )}
             </div>
           )}
         </div>
