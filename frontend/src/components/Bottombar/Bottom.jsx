@@ -61,7 +61,6 @@ const Bottom = ({ tool, setTool, texts, setTexts, color, setColor, strokeWidth, 
                     {tool === "table" ? (<Table tableConfig={tableConfig} setTableConfig={setTableConfig} />) : ""}
                   </div>
                 )}
-
                 <ul className='w-fit px-5 rounded-full bg-white/90 backdrop-blur-md border border-gray-300 py-1.5 flex justify-center gap-1 text-xl shadow-lg pointer-events-auto
                 [&>*]:px-2 hover:[&>*]:cursor-pointer active:[&>li]:bg-blue-300 [&>*]:rounded-md'>
                     <li style={{ background: tool === "mover" ? "blue" : "", cursor: "pointer" }} onClick={() => { tool === 'mover' ? handleToolClick('pen') : handleToolClick('mover') }}>
