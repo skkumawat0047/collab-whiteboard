@@ -168,6 +168,7 @@ export default function HomePage() {
       fetchBoards();
     }
   };
+  
 
   return (
     <div style={styles.page} onClick={() => { setActiveMenuId(null); setShowProfileMenu(false); }}>
